@@ -1,0 +1,80 @@
+[
+  {
+    "id": 74897425,
+    "state": "EXECUTED",
+    "date": "2019-02-08T09:09:35.038506",
+    "operationAmount": {
+      "amount": "62654.30",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Счет 28429442875257789335",
+    "to": "Счет 95473010446151855633"
+  },
+  {
+    "id": 692008409,
+    "state": "CANCELED",
+    "date": "2019-02-14T17:38:09.910336",
+    "operationAmount": {
+      "amount": "37044.95",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод организации",
+    "from": "Visa Classic 4610247282706784",
+    "to": "Счет 63229171188548882700"
+  },
+  {
+    "id": 431131847,
+    "state": "EXECUTED",
+    "date": "2018-05-05T01:38:56.538074",
+    "operationAmount": {
+      "amount": "56071.02",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "MasterCard 9454780748494532",
+    "to": "Счет 51958934737718181351"
+  },
+  {
+    "id": 104807525,
+    "state": "EXECUTED",
+    "date": "2019-06-01T06:46:16.803326",
+    "operationAmount": {
+      "amount": "60888.63",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на счет",
+    "from": "МИР 8201420097886664",
+    "to": "Счет 35116633516390079956"
+  },
+  {
+
+  },
+  {
+    "id": 917824439,
+    "state": "EXECUTED",
+    "date": "2019-07-18T12:27:13.355343",
+    "operationAmount": {
+      "amount": "82139.20",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Перевод с карты на карту",
+    "from": "Visa Platinum 6942697754917688",
+    "to": "МИР 2956603572573342"
+  }
+]
