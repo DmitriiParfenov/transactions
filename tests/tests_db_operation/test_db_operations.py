@@ -2,8 +2,8 @@ from utils.db_operations import operations_db
 import pytest
 import os.path
 
-PATH_file1 = os.path.join('tests', 'tests_db_operation', 'file_test.json')
-PATH_file2 = os.path.join('tests', 'tests_db_operation', 'file_for_test_operation.json')
+PATH_file1 = os.path.join('../tests_db_operation', 'file_test.json')
+PATH_file2 = os.path.join('../tests_db_operation', 'file_for_test_operation.json')
 
 
 @pytest.mark.parametrize("expected, way", [('Ошибка, файл не найден', os.path.join('utils', 'example.json')),

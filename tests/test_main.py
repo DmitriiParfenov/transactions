@@ -5,7 +5,7 @@ import os.path
 
 @pytest.fixture
 def get_path():
-    return os.path.join('tests', 'file_test_main.json')
+    return os.path.join('../tests', 'file_test_main.json')
 
 
 def test_main_sorted_data(get_path):

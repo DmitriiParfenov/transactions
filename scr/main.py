@@ -2,7 +2,7 @@ from utils.db_operations import operations_db
 import os.path
 
 # Объявление текущего пути к файлу с данными
-current_path = os.path.join('utils', 'operations.json')
+current_path = os.path.join('../utils', 'operations.json')
 
 
 def main(path):
