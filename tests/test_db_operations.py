@@ -7,18 +7,18 @@ PATH_file2 = os.path.join('tests_db_operation', 'file_for_test_operation.json')
 
 
 @pytest.mark.parametrize("expected, way", [('Ошибка, файл не найден', os.path.join('utils', 'example.json')),
-                                           ('Проверьте целостность файла', PATH_file1)])
+                                           ('Проверьте целостность файла', 'file_test.json')])
 def test_operations_db_validate_data(expected, way, get_empty_json_file):
     assert operations_db(way) == expected
 
 
 def test_operations_db_validate_json_data(get_filled_json_wrong):
     with pytest.raises(ValueError):
-        assert operations_db(os.path.join(PATH_file1)) == "Проверьте корректность данных в файле"
+        assert operations_db('file_test.json') == "Проверьте корректность данных в файле"
 
 
 def test_operations_db_sort():
-    db = operations_db(PATH_file2)
+    db = operations_db('file_for_test_operation.json')
     data_sorted = []
     for elem in db:
         data_sorted.append(elem["date"])
@@ -26,7 +26,7 @@ def test_operations_db_sort():
 
 
 def test_operations_db_corrected_state():
-    db = operations_db(PATH_file2)
+    db = operations_db('file_for_test_operation.json')
     data_corrected = []
     for elem in db:
         if elem['state'] == 'CANCELED':
