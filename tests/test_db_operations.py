@@ -3,20 +3,20 @@ import pytest
 import os.path
 import json
 
-PATH_1 = os.path.join('.', 'file_test.json')
-PATH_2 = os.path.join('.', 'file_for_test_operation.json')
+PATH_1 = os.path.join('.', 'tests', 'file_test.json')
+PATH_2 = os.path.join('tests', 'file_for_test_operation.json')
 
 
 @pytest.fixture
 def get_filled_json_wrong():
-    with open(os.path.join('.', 'file_test.json'), 'w', encoding='utf-8') as db:
+    with open(os.path.join('tests', 'file_test.json'), 'w', encoding='utf-8') as db:
         information = dict(zip(("a", "b"), (1, 2)))
         db.write(json.dumps(information))
 
 
 @pytest.fixture
 def get_empty_json_file():
-    with open(os.path.join('.', 'file_test.json'), 'w', encoding='utf-8'):
+    with open(os.path.join('tests', 'file_test.json'), 'w', encoding='utf-8'):
         pass
 
 
