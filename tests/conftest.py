@@ -2,7 +2,7 @@ import pytest
 import json
 import os.path
 
-PATH = os.path.join('../tests_db_operation', 'file_test.json')
+PATH = os.path.join('tests_db_operation', 'file_test.json')
 
 
 @pytest.fixture
