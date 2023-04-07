@@ -33,3 +33,8 @@ def test_get_hide_number_description(get_json_main):
     for elem in data_list:
         description += [f'{elem["description"]}']
     assert description == ['Перевод организации', 'Перевод с карты на счет', 'Открытие вклада']
+
+
+def test_get_hide_number_validate_data():
+    assert get_hide_number([1, 2, 3]) == f'Проверьте данные в файле. ' \
+                                         f'Подразумевается вызов функции operations_db перед исполнением get_hide_number'
