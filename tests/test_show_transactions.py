@@ -35,3 +35,9 @@ def test_get_transactions_result_amount_money(get_json_main):
     assert data_result == ['9824.07 USD',
                            '56071.02 руб.',
                            '90297.21 руб.']
+
+
+def test_get_transactions_result_validate_data():
+    assert get_transactions_result([1, 2, 3]) == f'Проверьте данные в файле. ' \
+                                                 f'Подразумевается вызов функции operations_db и get_hide_number ' \
+                                                 f'перед исполнением get_transactions_result'
