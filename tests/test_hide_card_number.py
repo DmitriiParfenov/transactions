@@ -1,12 +1,14 @@
+import os.path
+
+import pytest
+
 from utils.db_operations import operations_db
 from utils.hide_card_number import get_hide_number
-import os.path
-import pytest
 
 
 @pytest.fixture
 def get_json_main():
-    result = operations_db(os.path.join('.', 'tests', 'file_test_main.json'))
+    result = operations_db(os.path.join('../tests', 'file_test_main.json'))
     return result
 
 

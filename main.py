@@ -1,7 +1,8 @@
+import os.path
+
 from utils.db_operations import operations_db
 from utils.hide_card_number import get_hide_number
 from utils.show_transactions import get_transactions_result
-import os.path
 
 # Объявление текущего пути к файлу с данными
 current_path = os.path.join('operations.json')
