@@ -1,14 +1,13 @@
-from scr.main import main
-from utils.db_operations import operations_db
-from utils.hide_card_number import get_hide_number
-from utils.show_transactions import get_transactions_result
 import os.path
+
 import pytest
+
+from main import main
 
 
 @pytest.fixture
 def get_json_main():
-    path = os.path.join('.', 'tests', 'file_test_main.json')
+    path = os.path.join('../tests', 'file_test_main.json')
     result = main(path)
     return result.split('\n')
 
