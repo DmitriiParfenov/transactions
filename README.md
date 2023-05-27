@@ -22,15 +22,34 @@ Transactions — это проект, который показывает до 5
    - `to` — куда. </br>
 - Номер карты замаскирован и не отображается целиком: `XXXX XX** **** XXXX` </br>
 - Номер счета замаскирован и не отображается целиком: `**XXXX`  </br>
+- Для просмотра покрытия кода тестами введите в консоли:
+   ```
+    cd tests
+    pytest --cov --cov-report term-missing
+    ```
 
 
 # Клонирование репозитория и локальный запуск
 
 Выполните в консоли: </br>
 
+Для Windows: </br>
 ```
-git clone https://github.com/DmitriiParfenov/transactions.git
+git clone git@github.com:DmitriiParfenov/transactions.git
+python -m venv venv
+venv\Scripts\activate
 pip install poetry
-poetry update
-poetry run python scr/main.py
+poetry install
+poetry run python main.py
+```
+
+Для Linux: </br>
+```
+git clone git@github.com:DmitriiParfenov/transactions.git
+cd transactions
+python3 -m venv venv
+source venv/bin/activate
+curl -sSL https://install.python-poetry.org | python3
+poetry install
+poetry run python3 main.py
 ```
